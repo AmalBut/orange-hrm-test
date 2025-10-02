@@ -1,4 +1,3 @@
-import { Status, UserRoles } from "../../support/enums/add-user-data-enums";
 import { commonHelper } from "../../support/helpers/common-helpers";
 import { EmployeeHelper } from "../../support/helpers/employee-api-helper";
 import { addUserPage } from "../../support/pages/admin-pages/add-user-page";
@@ -47,7 +46,7 @@ describe("Admin Role Management", () => {
       addUserPage.typeConfirmPassword(users.addUserData.confirmPassword);
       addUserPage.clickOnSaveBtn();
       commonHelper.waitFor(2000);
-      adminPage.checkUserDataInTable(username, users.addUserData.userRole, users.addUserData.employeeName, users.addUserData.status);
+      userManagementPage.checkUserDataInTable(username, users.addUserData.userRole, users.addUserData.employeeName, users.addUserData.status);
     });
   });
 
