@@ -1,0 +1,20 @@
+{
+    "valid":{
+        "username":"Admin",
+        "password":"admin123"
+    },
+
+    "invalid":{
+        "username":"wrongUser",
+        "password":"wrongPass"
+    },
+
+    "addUserData":{
+        "userRole":"Admin",
+        "employeeName":"John Smith",
+        "username":"john.smith.auto",
+        "status":"Enabled",
+        "password":"Test@12345",
+        "confirmPassword":"Test@12345"
+    }
+}
