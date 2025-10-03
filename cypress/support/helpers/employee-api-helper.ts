@@ -20,8 +20,8 @@ export class EmployeeHelper{
             firstName: CreateEmployee.FIRST_NAME,
             middleName: CreateEmployee.MIDDLE_NAME,
             lastName: CreateEmployee.LAST_NAME,
-            employeeId: commonHelper.getUniqueEmployeeId()
+            employeeId: commonHelper.getUniqueId()
         }
-        return cy.createEmployee(URLs.createEmployee, payload);
+        return cy.createEmployee(URLs.createEmployee, payload, headers);
     }
 }
