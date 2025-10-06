@@ -1,4 +1,5 @@
 import { ICreateEmployeeRequest } from "../apis/payload/add-employee";
+import { IDeleteEmployeeRequest } from "../apis/payload/delete-employee";
 import { CreateEmployee } from "../enums/add-employee-data-enum";
 import { HeaderKey, HeaderValues } from "../enums/http";
 import { commonHelper } from "./common-helpers";
@@ -6,7 +7,7 @@ import { commonHelper } from "./common-helpers";
 const baseUrl = Cypress.config().baseUrl;
 
 const URLs = {
-    createEmployee: `${baseUrl}/api/v2/pim/employees`
+    employeeCrudUrl: `${baseUrl}/api/v2/pim/employees`
 }
 
 const headers: Record<string, string> = {
@@ -20,8 +21,15 @@ export class EmployeeHelper{
             firstName: CreateEmployee.FIRST_NAME,
             middleName: CreateEmployee.MIDDLE_NAME,
             lastName: CreateEmployee.LAST_NAME,
-            employeeId: commonHelper.getUniqueEmployeeId()
+            employeeId: commonHelper.getUniqueId()
         }
-        return cy.createEmployee(URLs.createEmployee, payload);
+        return cy.createEmployee(URLs.employeeCrudUrl, payload);
     }
+
+    static deleteEmployee(userId: number){
+          const payload: IDeleteEmployeeRequest = {
+            ids: [userId]
+          }
+          return cy.deleteEmployee(URLs.employeeCrudUrl, payload, headers);
+        }
 }

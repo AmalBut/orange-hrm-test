@@ -27,5 +27,9 @@ export class WebElementHandler {
         return cy.get(LOCATORS.SAVE_BTN);
 
     }
+    
+    static searcheButton(){
+        return cy.get(LOCATORS.SAVE_BTN).contains('Search');
+    }
 
 }
