@@ -16,5 +16,15 @@
         "status":"Enabled",
         "password":"Test@12345",
         "confirmPassword":"Test@12345"
+    },
+
+    "essUser":{
+        "username":"amal.i.butmah",
+        "password":"Test@123",
+        "userRole":2,
+        "status":1,
+        "firstName":"Amal",
+        "mddileName":"I",
+        "lastName":"Butmah"
     }
 }

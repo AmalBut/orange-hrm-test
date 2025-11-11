@@ -1,4 +1,8 @@
 {
     "invalidCred": "Invalid credentials",
-    "requiresMsg": "Required"
+    "requiresMsg": "Required",
+    "passwordAtLeast7": "Should have at least 7 characters",
+    "fileTypeNotAllowed": "File type not allowed",
+    "pendingApproval": "Pending Approval",
+    "Scheduled": "Scheduled"
 }

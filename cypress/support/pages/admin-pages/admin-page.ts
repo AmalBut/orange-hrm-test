@@ -1,22 +1,21 @@
 import { APP_MODULES, MODULES_URL_FREG } from "../../enums/modules-enums";
-import { WebTableHandler } from "../../helpers/web-table-handler";
 
 const LOCATORS = {
-  mainMenuItem: ".oxd-main-menu-item",
-  headerH: "h6.oxd-topbar-header-breadcrumb-module",
+  MAIN_MENU_ITEM: ".oxd-main-menu-item",
+  HEADER: "h6.oxd-topbar-header-breadcrumb-module",
 };
 
 class AdminPage {
   openFromMenu() {
-    cy.contains(LOCATORS.mainMenuItem, APP_MODULES.Admin).click();
+    cy.contains(LOCATORS.MAIN_MENU_ITEM, APP_MODULES.ADMIN).click();
   }
 
   checkHeader() {
-    cy.get(LOCATORS.headerH).should("contain", APP_MODULES.Admin);
+    cy.get(LOCATORS.HEADER).should("contain", APP_MODULES.ADMIN);
   }
 
   checkUrl() {
-    cy.url().should("include", MODULES_URL_FREG.Admin);
+    cy.url().should("include", MODULES_URL_FREG.ADMIN);
   }
   
 }

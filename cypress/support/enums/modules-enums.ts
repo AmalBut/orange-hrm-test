@@ -1,29 +1,29 @@
 export enum APP_MODULES {
-    Dashboard = 'Dashboard',
-    Admin = 'Admin',
+    DASHBOARD = 'Dashboard',
+    ADMIN = 'Admin',
     PIM = 'PIM',
-    Leave = 'Leave',
-    Time = 'Time',
-    Recruitment = 'Recruitment',
-    MyInfo = 'My Info',
-    Performance = 'Performance',
-    Directory = 'Directory',
-    Maintenance = 'Maintenance',
-    Claim = 'Claim',
-    Buzz = 'Buzz'
+    LEAVE = 'Leave',
+    TIME = 'Time',
+    RECRUITMENT = 'Recruitment',
+    MY_INFO = 'My Info',
+    PERFORMANCE = 'Performance',
+    DIRECTORY = 'Directory',
+    MAINTENANCE = 'Maintenance',
+    CLAIM = 'Claim',
+    BUZZ = 'Buzz'
 }
 
 export enum MODULES_URL_FREG {
-    Dashboard = '/dashboard',
-    Admin = '/admin',
+    DASHBOARD = '/dashboard',
+    ADMIN = '/admin',
     PIM = '/pim',
-    Leave = '/leave',
-    Time = '/time',
-    Recruitment = '/recruitment',
-    MyInfo = '/pim',
-    Performance = '/performance',
-    Directory = '/directory',
-    Maintenance = '/maintenance',
-    Claim = '/claim',
-    Buzz = '/buzz'
+    LEAVE = '/leave',
+    TIME = '/time',
+    RECRUITMENT = '/recruitment',
+    MY_INFO = '/pim',
+    PERFORMANCE = '/performance',
+    DIRECTORY = '/directory',
+    MAINTENANCE = '/maintenance',
+    CLAIM = '/claim',
+    BUZZ = '/buzz'
 }

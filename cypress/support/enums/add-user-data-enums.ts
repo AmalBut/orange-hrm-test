@@ -1,14 +1,14 @@
-export enum UserRoles{
+export enum USER_ROLES{
     ADMIN = 'Admin',
     ESS = 'ESS'
 }
 
-export enum Status{
+export enum STATUS{
     DISABLED = 'Disabled',
     ENABLED = 'Enabled'
 }
 
-export enum CreateUser{
+export enum CREATE_ADMIN_USER{
     USERNAME = 'john.smith.auto',
     PASSWORD = 'Test@123',
     STATUS = 1,
