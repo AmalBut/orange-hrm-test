@@ -1,8 +1,8 @@
 const LOCATORS ={
-    username : 'input[name=username]',
-    password : 'input[name=password]',
-    submitBtn : 'button:submit',
-    requiredMsg : '.oxd-input-field-error-message'
+    USERNAME : 'input[name=username]',
+    PASSWORD : 'input[name=password]',
+    SUMBIT_BTN : 'button:submit',
+    REQUIRED_MSG : '.oxd-input-field-error-message'
 }
 
 class LoginPage {
@@ -11,35 +11,35 @@ class LoginPage {
  }
 
  isLoaded(){
-    cy.get(LOCATORS.username).should("be.visible");
+    cy.get(LOCATORS.USERNAME).should("be.visible");
  }
 
  typeUsername(value : string){
-    cy.get(LOCATORS.username).type(value);
+    cy.get(LOCATORS.USERNAME).type(value);
  }
 
  typePassword(value : string){
-    cy.get(LOCATORS.password).type(value);
+    cy.get(LOCATORS.PASSWORD).type(value);
  }
 
  clearUsername(){
-    cy.get(LOCATORS.username).clear();
+    cy.get(LOCATORS.USERNAME).clear();
  }
 
  clearPassword(){
-    cy.get(LOCATORS.password).clear();
+    cy.get(LOCATORS.PASSWORD).clear();
  }
 
  submit(){
-    cy.get(LOCATORS.submitBtn).click();
+    cy.get(LOCATORS.SUMBIT_BTN).click();
  }
 
  passwordShouldBeMasked(){
-    cy.get(LOCATORS.password).should('have.attr','type','password');
+    cy.get(LOCATORS.PASSWORD).should('have.attr','type','password');
  }
 
  assertRequiredAt(index: number, text: string){
-    cy.get(LOCATORS.requiredMsg).eq(index).should('contain',text);
+    cy.get(LOCATORS.REQUIRED_MSG).eq(index).should('contain',text);
  }
 
  assertInvalidCredentials(text: string){

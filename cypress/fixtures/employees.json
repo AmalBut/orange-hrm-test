@@ -1,7 +1,14 @@
 {
-    "fullData":{
+    "newEmployee":{
         "firstName": "Amal",
         "middleName": "Isam",
-        "lastName": "Butmah"
+        "lastName": "Butmah",
+        "username": "amal.butmah",
+        "password": "Amal@123"
+    },
+
+    "wrongEmployeeData":{
+        "firstName": " ",
+        "password":"12"
     }
 }

@@ -1,4 +1,4 @@
-export enum StatusCode {
+export enum STATUS_CODE {
   OK = 200,
   CREATED = 201,
   BAD_REQUEST = 400,
@@ -8,7 +8,7 @@ export enum StatusCode {
   INTERNAL_SERVER_ERROR = 500,
 }
 
-export enum HttpMethod {
+export enum HTTP_METHOD {
   GET = 'GET',
   POST = 'POST',
   PUT = 'PUT',
@@ -16,7 +16,7 @@ export enum HttpMethod {
   DELETE = 'DELETE'
 }
 
-export enum HeaderKey {
+export enum HEADER_KEY {
   CONTENT_TYPE = 'content-type',
   ACCEPT = 'Accept',
   X_API_KEY = 'x-api-key',
@@ -24,7 +24,7 @@ export enum HeaderKey {
   COOKIES = 'Cookies'
 }
 
-export enum HeaderValues {
+export enum HEADER_VALUES {
   CONTENT_TYPE = 'application/json',
   ACCEPT = 'application/json',
   X_API_KEY = Cypress.env("apiKey")
